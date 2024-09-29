@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+/* Primary */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+/* Neutral */
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: auto; */
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    padding: 0 38px;
+}
+.main-title{
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+}
+.title-bold{
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 12px;
+}
+
+.main-paragraph{
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* Styling the cards */
+.cards-style{
+    height: 155px;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 14px;
+    box-shadow: 0px 2px 16px -5px rgba(29, 230, 248, 0.688);
+}
+.supervisor-card{
+    border-top: 3px solid var(--Cyan);
+}
+.team-builder{
+    border-top: 3px solid var(--Red);
+}
+.karma{
+    border-top: 3px solid var(--Orange);
+}
+.calculator{
+    border-top: 3px solid var(--Blue);
+}
+.cards-title{
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 5px;
+}
+.cards-paragraph{
+    color: var(--Grayish-Blue);
+    margin-bottom: 13px;
+}
+.cards-icons{
+    width: 42px;
+    float: right;
+}
+
+@media (min-width: 1024px){
+    body{
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 25px;
+    }
+    .main-paragraph{
+        width: 460px;
+    }
+    .cards-style{
+        width: 320px;
+        height: 230px;
+    }
+    .cards-icons{
+        width: 60px;
+        margin-top: 20px;
+    }
+    .supervisor-card, .calculator{
+        position: relative;
+        top: 100px;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
